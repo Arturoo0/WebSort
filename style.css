@@ -11,7 +11,7 @@ body {
   border-radius: 20px;
 }
 
-.button {
+#button {
   text-decoration: none;
   padding: 30px 40px;
   border-radius: 30px;
