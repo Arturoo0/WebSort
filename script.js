@@ -8,8 +8,19 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight * 0.7 ;
 
 var SOLVE_STATE = false;
+var currentList;
 
 randomButton.onclick = () => {
   c.clearRect(0, 0, canvas.width, canvas.height);
-  drawList(genList(30));
+  currentList = genList(10);
+  drawList(currentList);
+  SOLVE_STATE = false;
+}
+
+solveButton.onclick = () => {
+  if (SOLVE_STATE == false){
+    c.clearRect(0, 0, canvas.width, canvas.height);
+    drawList(bogoSort(currentList));
+    SOLVE_STATE = true;
+  }
 }
