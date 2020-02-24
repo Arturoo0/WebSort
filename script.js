@@ -1,34 +1,14 @@
 
-let button = document.querySelector("#button");
-let canvas = document.querySelector("canvas")
-let c = canvas.getContext('2d');
+var button = document.querySelector(".button");
+var canvas = document.querySelector("canvas")
+var c = canvas.getContext('2d');
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight * 0.7 ;
 
-function genList(size){
-  lst = [];
+var SOLVE_STATE = false;
 
-  for (let i = 0; i < size; i++){
-    lst.push(Math.random(canvas.height) * 100);
-  }
-
-  return lst;
+button.onclick = () => {
+  c.clearRect(0, 0, canvas.width, canvas.height);
+  drawList(genList(30));
 }
-
-function drawList(lst){
-
-  increment = canvas.width/lst.length;
-  currentX = 0;
-
-  for (let i = 0; i < lst.length; i++){
-    c.fillRect(currentX, 0, increment, lst[i]);
-    currentX += increment;
-  }
-}
-
-drawList(genList(400));
-
-// button.onclick = () => {
-//   console.log("1");
-// }

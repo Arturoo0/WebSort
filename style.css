@@ -1,14 +1,14 @@
 
 body {
-
   text-align: center;
+  margin: 0 0;
 }
 
 #canvas {
   background: gray;
 }
 
-#button {
+.button {
   text-decoration: none;
   padding: 30px 40px;
   border-radius: 30px;
