@@ -15,7 +15,7 @@ function drawList(lst){
   currentX = 0;
 
   for (let i = 0; i < lst.length; i++){
-    c.fillRect(currentX, 0, increment, lst[i]);
+    c.fillRect(currentX, canvas.height, increment, -lst[i]);
     currentX += increment;
   }
 }

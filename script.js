@@ -12,7 +12,7 @@ var currentList;
 
 randomButton.onclick = () => {
   c.clearRect(0, 0, canvas.width, canvas.height);
-  currentList = genList(10);
+  currentList = genList(100);
   drawList(currentList);
   SOLVE_STATE = false;
 }
@@ -20,7 +20,7 @@ randomButton.onclick = () => {
 solveButton.onclick = () => {
   if (SOLVE_STATE == false){
     c.clearRect(0, 0, canvas.width, canvas.height);
-    drawList(bogoSort(currentList));
+    drawList(bubbleSort(currentList));
     SOLVE_STATE = true;
   }
 }
