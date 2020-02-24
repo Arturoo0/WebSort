@@ -16,8 +16,18 @@ function genList(size){
   return lst;
 }
 
-console.log(genList(5));
+function drawList(lst){
 
+  increment = canvas.width/lst.length;
+  currentX = 0;
+
+  for (let i = 0; i < lst.length; i++){
+    c.fillRect(currentX, 0, increment, lst[i]);
+    currentX += increment;
+  }
+}
+
+drawList(genList(400));
 
 // button.onclick = () => {
 //   console.log("1");
