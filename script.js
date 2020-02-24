@@ -1,5 +1,6 @@
 
-var button = document.querySelector(".button");
+var randomButton = document.querySelector("#randomize");
+var solveButton = document.querySelector("#solve")
 var canvas = document.querySelector("canvas")
 var c = canvas.getContext('2d');
 
@@ -8,7 +9,7 @@ canvas.height = window.innerHeight * 0.7 ;
 
 var SOLVE_STATE = false;
 
-button.onclick = () => {
+randomButton.onclick = () => {
   c.clearRect(0, 0, canvas.width, canvas.height);
   drawList(genList(30));
 }
