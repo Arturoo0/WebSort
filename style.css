@@ -1,18 +1,38 @@
 
 body {
-  text-align: center;
+  /* text-align: center; */
+  background-color: #222831;
   margin: 0 0;
 }
 
+#topContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+#title{
+  font-weight: bold;
+  font-size: 4rem;
+  margin-bottom: 4%;
+  color: white;
+}
+
 #canvas {
-  background: gray;
+  /* border: 2px solid black; */
+}
+
+#buttonContainer {
+  margin-right: 5px;
+  margin: 5px;
 }
 
 .button {
   text-decoration: none;
-  padding: 30px 40px;
-  border-radius: 30px;
-  background-color: gray;
-  display: inline-block;
+  padding: 20px 30px;
+  background-color: #364f6b;
   color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: inline-block;
+  border-radius: 10px;
 }
