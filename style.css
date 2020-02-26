@@ -30,6 +30,16 @@ body {
   margin: 5px;
 }
 
+#algos{
+  -webkit-appearance: none;
+  padding: 18px 30px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background-color: #00adb5;
+  font-weight: bold;
+  color: white;
+}
+
 .button {
   text-decoration: none;
   padding: 20px 30px;

@@ -15,7 +15,7 @@ let animQueue = new animationQueue();
 randomButton.onclick = () => {
   animQueue.queue.length = 0;
   c.clearRect(0, 0, canvas.width, canvas.height);
-  currentList = genList(170);
+  currentList = genList(10);
   drawList(currentList);
   SOLVE_STATE = false;
 }
@@ -23,7 +23,8 @@ randomButton.onclick = () => {
 solveButton.onclick = () => {
   if (SOLVE_STATE == false){
     c.clearRect(0, 0, canvas.width, canvas.height);
-    bubbleSort(currentList);
+    // bogoSort(currentList); call case
+    console.log(animQueue.queue.length);
     animQueue.animate();
     SOLVE_STATE = true;
   }
