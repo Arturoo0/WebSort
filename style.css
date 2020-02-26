@@ -3,11 +3,16 @@ body {
   /* text-align: center; */
   background-color: #222831;
   margin: 0 0;
+  font-family: sans-serif;
 }
 
 #topContainer{
   display: flex;
   justify-content: space-between;
+}
+
+#titleColor{
+  color: #00adb5;
 }
 
 #title{
@@ -25,10 +30,20 @@ body {
   margin: 5px;
 }
 
+#algos{
+  -webkit-appearance: none;
+  padding: 18px 30px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background-color: #00adb5;
+  font-weight: bold;
+  color: white;
+}
+
 .button {
   text-decoration: none;
   padding: 20px 30px;
-  background-color: #364f6b;
+  background-color: #00adb5;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;

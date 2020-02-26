@@ -1,16 +1,19 @@
 
-var randomButton = document.querySelector("#randomize");
-var solveButton = document.querySelector("#solve")
-var canvas = document.querySelector("canvas")
-var c = canvas.getContext('2d');
+let randomButton = document.querySelector("#randomize");
+let solveButton = document.querySelector("#solve")
+let canvas = document.querySelector("canvas")
+let c = canvas.getContext('2d');
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-var SOLVE_STATE = false;
-var currentList;
+let SOLVE_STATE = false;
+let currentList;
+
+let animQueue = new animationQueue();
 
 randomButton.onclick = () => {
+  animQueue.queue.length = 0;
   c.clearRect(0, 0, canvas.width, canvas.height);
   currentList = genList(10);
   drawList(currentList);
@@ -20,7 +23,9 @@ randomButton.onclick = () => {
 solveButton.onclick = () => {
   if (SOLVE_STATE == false){
     c.clearRect(0, 0, canvas.width, canvas.height);
-    drawList(bubbleSort(currentList));
+    // bogoSort(currentList); call case
+    selectAlgo(currentList);
+    animQueue.animate();
     SOLVE_STATE = true;
   }
 }

@@ -22,7 +22,11 @@ function bogoSort(lst){
       lastInt = lst[i];
     }
 
-    if (sorted == true)
-      return lst;
+    animQueue.enqueue(lst.slice());
+
+    if (sorted == true){
+      animQueue.enqueue(lst.slice());
+      return;
+    }
   }
 }

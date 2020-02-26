@@ -4,7 +4,7 @@ function rand(x){ // not inclusive
 }
 
 function genList(size){
-  lst = [];
+  let lst = [];
 
   for (let i = 0; i < size; i++){
     lst.push(rand(canvas.height));
@@ -15,8 +15,11 @@ function genList(size){
 
 function drawList(lst){
 
-  increment = canvas.width/lst.length;
-  currentX = 0;
+  if (lst == null)
+    return;
+
+  let increment = canvas.width/lst.length;
+  let currentX = 0;
 
   for (let i = 0; i < lst.length; i++){
     if (i % 2 == 0){
