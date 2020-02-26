@@ -8,5 +8,4 @@ function selectAlgo(lst){
   else if (dropDown.value == "bogoSort")
     bogoSort(lst);
 
-
 }
