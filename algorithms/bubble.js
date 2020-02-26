@@ -10,9 +10,11 @@ function bubbleSort(lst){
         swap = true;
       }
     }
-    if (swap == false)
-      animQueue.push(lst);
+    if (swap == false){
+      animQueue.enqueue(lst);
+      return;
+    }
 
-    animQueue.push(lst);
+    animQueue.enqueue(lst);
   }
 }

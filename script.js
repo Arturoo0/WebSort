@@ -22,7 +22,7 @@ randomButton.onclick = () => {
 solveButton.onclick = () => {
   if (SOLVE_STATE == false){
     c.clearRect(0, 0, canvas.width, canvas.height);
-    drawList(bubbleSort(currentList));
+    animQueue.animate();
     SOLVE_STATE = true;
   }
 }
