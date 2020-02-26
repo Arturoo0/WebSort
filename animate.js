@@ -18,12 +18,14 @@ class animationQueue{
 
   animate(){
 
-    setTimeout(function(){
-      drawList(this.queue.dequeue());
-    }, 500);
+    setTimeout(function(animObj){
+      c.clearRect(0, 0, canvas.width, canvas.height);
+      drawList(animObj.dequeue());
 
-    if (this.queue.length != 0)
-      animate();
+      if (animObj.queue.length != 0)
+        animObj.animate();
+
+    }, 1, this);
 
   }
 
