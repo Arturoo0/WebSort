@@ -3,11 +3,16 @@ body {
   /* text-align: center; */
   background-color: #222831;
   margin: 0 0;
+  font-family: sans-serif;
 }
 
 #topContainer{
   display: flex;
   justify-content: space-between;
+}
+
+#titleColor{
+  color: #00adb5;
 }
 
 #title{

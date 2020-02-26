@@ -1,20 +1,20 @@
 
-var randomButton = document.querySelector("#randomize");
-var solveButton = document.querySelector("#solve")
-var canvas = document.querySelector("canvas")
-var c = canvas.getContext('2d');
+let randomButton = document.querySelector("#randomize");
+let solveButton = document.querySelector("#solve")
+let canvas = document.querySelector("canvas")
+let c = canvas.getContext('2d');
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-var SOLVE_STATE = false;
-var currentList;
+let SOLVE_STATE = false;
+let currentList;
 
-var animQueue = new animationQueue();
+let animQueue = new animationQueue();
 
 randomButton.onclick = () => {
   c.clearRect(0, 0, canvas.width, canvas.height);
-  currentList = genList(170);
+  currentList = genList(20);
   drawList(currentList);
   SOLVE_STATE = false;
 }
