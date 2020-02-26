@@ -24,7 +24,7 @@ solveButton.onclick = () => {
   if (SOLVE_STATE == false){
     c.clearRect(0, 0, canvas.width, canvas.height);
     // bogoSort(currentList); call case
-    console.log(animQueue.queue.length);
+    selectAlgo(currentList);
     animQueue.animate();
     SOLVE_STATE = true;
   }
