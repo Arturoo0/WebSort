@@ -12,7 +12,7 @@ var currentList;
 
 randomButton.onclick = () => {
   c.clearRect(0, 0, canvas.width, canvas.height);
-  currentList = genList(100);
+  currentList = genList(10);
   drawList(currentList);
   SOLVE_STATE = false;
 }

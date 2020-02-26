@@ -12,6 +12,5 @@ function bubbleSort(lst){
     }
     if (swap == false)
       return lst;
-
   }
 }
