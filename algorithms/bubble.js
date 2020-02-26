@@ -11,6 +11,8 @@ function bubbleSort(lst){
       }
     }
     if (swap == false)
-      return lst;
+      animQueue.push(lst);
+
+    animQueue.push(lst);
   }
 }

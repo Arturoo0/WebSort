@@ -10,6 +10,8 @@ canvas.height = window.innerHeight;
 var SOLVE_STATE = false;
 var currentList;
 
+let animQueue = new animationQueue();
+
 randomButton.onclick = () => {
   c.clearRect(0, 0, canvas.width, canvas.height);
   currentList = genList(10);
