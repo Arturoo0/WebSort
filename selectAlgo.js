@@ -7,8 +7,9 @@ function selectAlgo(lst){
     bubbleSort(lst);
   else if (dropDown.value == "bogoSort")
     bogoSort(lst);
-  else if (dropDown.value == "insertionSort") {
+  else if (dropDown.value == "insertionSort")
     insertionSort(lst);
-  }
+  else if (dropDown.value == "selectionSort")
+    selectionSort(lst);
 
 }
