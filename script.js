@@ -15,7 +15,7 @@ let animQueue = new animationQueue();
 randomButton.onclick = () => {
   animQueue.queue.length = 0;
   c.clearRect(0, 0, canvas.width, canvas.height);
-  currentList = genList(10);
+  currentList = genList(100);
   drawList(currentList);
   SOLVE_STATE = false;
 }
