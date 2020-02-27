@@ -3,13 +3,13 @@ function selectAlgo(lst){
 
   let dropDown = document.querySelector("#algos");
 
-  if (dropDown.value == "bubbleSort")
+  if (dropDown.value === "bubbleSort")
     bubbleSort(lst);
-  else if (dropDown.value == "bogoSort")
+  else if (dropDown.value === "bogoSort")
     bogoSort(lst);
-  else if (dropDown.value == "insertionSort")
+  else if (dropDown.value === "insertionSort")
     insertionSort(lst);
-  else if (dropDown.value == "selectionSort")
+  else if (dropDown.value === "selectionSort")
     selectionSort(lst);
 
 }

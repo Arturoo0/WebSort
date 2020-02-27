@@ -1,7 +1,7 @@
 
 function selectionSort(lst){
-
   let len = lst.length;
+  console.log(lst);
 
   for (let i = 0; i < len - 1; i++){
 
@@ -15,8 +15,9 @@ function selectionSort(lst){
     let temp = lst[min];
     lst[min] = lst[i];
     lst[i] = temp;
+    console.log(lst.slice());
 
-    animQueue.enqueue(lst.splice());
+    animQueue.enqueue(lst.slice());
   }
 
   return;

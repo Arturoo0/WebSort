@@ -25,7 +25,7 @@ class animationQueue{
       if (animObj.queue.length != 0)
         animObj.animate();
 
-    }, 1, this);
+    }, 100, this);
 
   }
 
