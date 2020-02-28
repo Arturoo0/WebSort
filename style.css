@@ -36,7 +36,16 @@ body {
   font-size: 1.2rem;
   border-radius: 10px;
   background-color: #00adb5;
+  border: none;
   font-weight: bold;
+  color: white;
+}
+
+#sizeRange {
+}
+
+label {
+  font-size: 1.2rem;
   color: white;
 }
 
