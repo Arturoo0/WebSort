@@ -25,6 +25,7 @@ solveButton.onclick = () => {
     c.clearRect(0, 0, canvas.width, canvas.height);
     // bogoSort(currentList); call case
     selectAlgo(currentList);
+    animQueue.setSpeed();
     animQueue.animate();
     SOLVE_STATE = true;
   }

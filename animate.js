@@ -3,6 +3,7 @@ class animationQueue{
 
   constructor(){
     this.queue = [];
+    this.speed = 0;
   }
 
   enqueue(item){
@@ -16,6 +17,11 @@ class animationQueue{
     return this.queue.shift();
   }
 
+  setSpeed(){
+    let getSpeed = document.querySelector("#speedRange");
+    this.speed = getSpeed.value;
+  }
+
   animate(){
 
     setTimeout(function(animObj){
@@ -25,7 +31,7 @@ class animationQueue{
       if (animObj.queue.length != 0)
         animObj.animate();
 
-    }, 10, this);
+    }, this.speed, this);
 
   }
 

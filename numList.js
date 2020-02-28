@@ -1,9 +1,23 @@
 
+let listSize = document.querySelector("#sizeRange");
+let dropDown = document.querySelector("#algos");
+
 function rand(x){ // not inclusive
   return Math.floor(Math.random() * Math.floor(x));
 }
 
-function genList(size){
+let coeffMap = {
+  "selectionSort" : 6,
+  "bubbleSort" : 2,
+  "insertionSort" : 3,
+  "bogoSort" : .10,
+  "quickSort" : 6,
+};
+
+function genList(){
+
+  listVal = parseFloat(listSize.value);
+  let size = Math.floor(coeffMap[dropDown.value] * listVal);
   let lst = [];
 
   for (let i = 0; i < size; i++){
