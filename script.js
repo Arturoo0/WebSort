@@ -13,13 +13,14 @@ let currentList;
 let animQueue = new animationQueue();
 
 randomButton.onclick = () => {
-  solveButton.disabled = true;
+  solveButton.style.pointerEvents = 'none';
+  console.log(solveButton.style.pointerEvents.value);
   animQueue.queue.length = 0;
   c.clearRect(0, 0, canvas.width, canvas.height);
   currentList = genList();
   animQueue.animate();
   SOLVE_STATE = false;
-  solveButton.disabled = false;
+  solveButton.style.pointerEvents = 'auto';
 }
 
 solveButton.onclick = () => {
