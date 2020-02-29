@@ -2,8 +2,10 @@
 let listSize = document.querySelector("#sizeRange");
 let dropDown = document.querySelector("#algos");
 
-function rand(x){ // not inclusive
-  return Math.floor(Math.random() * Math.floor(x));
+function rand(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
 
 let coeffMap = {
@@ -12,6 +14,7 @@ let coeffMap = {
   "insertionSort" : 3,
   "bogoSort" : .10,
   "quickSort" : 6,
+  "mergeSort" : 6
 };
 
 function genList(){

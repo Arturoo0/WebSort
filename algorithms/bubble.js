@@ -1,5 +1,7 @@
 function bubbleSort(lst){
 
+  let switch_ = 1;
+
   while (true){
     let swap = false;
 
@@ -11,7 +13,12 @@ function bubbleSort(lst){
         swap = true;
       }
 
-      animQueue.enqueue(lst.slice());
+      if (switch_ == 1){
+        animQueue.enqueue(lst.slice());
+        switch_ = 0;
+      }else
+        switch_ = 1; 
+
 
     }
     if (swap == false){

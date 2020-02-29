@@ -14,5 +14,8 @@ function selectAlgo(lst){
   else if (dropDown.value === "quickSort") {
     quickSort(lst);
   }
+  else if (dropDown.value === "mergeSort") {
+    mergeSort(lst);
+  }
 
 }
