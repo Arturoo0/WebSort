@@ -22,6 +22,7 @@ function genList(){
 
   for (let i = 0; i < size; i++){
     lst.push(rand(canvas.height));
+    animQueue.enqueue(lst.slice());
   }
 
   return lst;

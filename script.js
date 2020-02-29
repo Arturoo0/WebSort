@@ -15,13 +15,14 @@ let animQueue = new animationQueue();
 randomButton.onclick = () => {
   animQueue.queue.length = 0;
   c.clearRect(0, 0, canvas.width, canvas.height);
-  currentList = genList(10000);
-  drawList(currentList);
+  currentList = genList();
+  animQueue.animate();
   SOLVE_STATE = false;
 }
 
 solveButton.onclick = () => {
   if (SOLVE_STATE === false){
+    animQueue.queue.length = 0;
     c.clearRect(0, 0, canvas.width, canvas.height);
     // bogoSort(currentList); call case
     selectAlgo(currentList);
