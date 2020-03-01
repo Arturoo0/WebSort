@@ -19,7 +19,7 @@ class animationQueue{
 
   setSpeed(){
     let getSpeed = document.querySelector("#speedRange");
-    this.speed = getSpeed.value;
+    this.speed = 100 - getSpeed.value;
   }
 
   animate(){
@@ -32,6 +32,9 @@ class animationQueue{
         animObj.animate();
 
     }, this.speed, this);
+    // if (this.queue.length === 1)
+    //   solveButton.disabled == false;
+    // console.log(solveButton.disabled);
 
   }
 
