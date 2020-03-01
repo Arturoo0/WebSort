@@ -42,6 +42,7 @@ body {
   border: none;
   font-weight: bold;
   color: white;
+  box-shadow: 10px 5px 5px black;
 }
 
 #sizeRange {
@@ -62,6 +63,7 @@ label {
   display: inline-block;
   border-radius: 10px;
   border: none;
+  box-shadow: 10px 5px 5px black;
 }
 
 #footer {
