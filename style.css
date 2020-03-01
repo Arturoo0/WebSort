@@ -1,7 +1,8 @@
 
 body {
   /* text-align: center; */
-  background-color: #222831;
+  background: rgb(34,40,49);
+  background: linear-gradient(90deg, rgba(34,40,49,1) 0%, rgba(13,17,41,0.9542191876750701) 82%);
   margin: 0 0;
   font-family: sans-serif;
 }
@@ -23,6 +24,8 @@ body {
 
 #canvas {
   /* border: 2px solid black; */
+  margin-bottom: 0;
+  border: none;
 }
 
 #buttonContainer {
@@ -59,4 +62,18 @@ label {
   display: inline-block;
   border-radius: 10px;
   border: none;
+}
+
+#footer {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  padding: 5%;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.links{
+  color: white;
 }
