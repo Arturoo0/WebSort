@@ -13,7 +13,7 @@ body {
 }
 
 #titleColor{
-  color: #00adb5;
+  color: #46b3e6;
 }
 
 #title{
@@ -35,39 +35,43 @@ body {
 
 #algos{
   -webkit-appearance: none;
-  padding: 18px 30px;
-  font-size: 1.2rem;
-  border-radius: 10px;
-  background-color: #00adb5;
+  padding: 7px 16px;
+  margin-right: 10px;
+  font-size: .8rem;
+  border-radius: 4px;
+  background-color: #3f72af;
   border: none;
   font-weight: bold;
   color: white;
-  -webkit-box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.75);
-}
-
-#sizeRange {
+  -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.36);
+  -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.36);
+  box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.36);
 }
 
 label {
-  font-size: 1.2rem;
-  color: white;
+  font-size: 1rem;
+  color: black;
 }
 
 .button {
+  margin-right: 10px;
   text-decoration: none;
-  padding: 20px 30px;
-  background-color: #00adb5;
+  padding: 7px 13px;
+  background-color: #3f72af;
   color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 0.8rem;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 4px;
   border: none;
-  -webkit-box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.36);
+  -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.36);
+  box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.36);
+}
+
+
+#solve {
+  background-color: #01d28e;
 }
 
 #footer {
@@ -83,4 +87,23 @@ label {
 .links{
   color: white;
   text-decoration: none;
+}
+
+i {
+  font-size: 2rem;
+  color: #aaa9ad;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#outer-title {
+  color: #27496d;
+}
+
+select {
+  text-align: center;
+  text-align-last: center;
 }
