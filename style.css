@@ -69,7 +69,6 @@ label {
   box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.36);
 }
 
-
 #solve {
   background-color: #01d28e;
 }
@@ -106,4 +105,8 @@ i {
 select {
   text-align: center;
   text-align-last: center;
+}
+
+.fa-spin-hover:hover {
+    animation: fa-spin 2s infinite linear;
 }
